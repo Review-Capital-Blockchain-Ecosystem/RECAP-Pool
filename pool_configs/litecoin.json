@@ -1,0 +1,79 @@
+{
+    "enabled": true,
+    "coin": "litecoin.json",
+
+    "address": "Xsv2sUMtRqXXcSDUtnBM2x68REtz7UrJKk",
+
+    "rewardRecipients": {
+        "Xjf69NpH9BkN5kc8JZuo9RYNkRRefwRKe7": 1,
+        "XcUNxdqWYULUUK9oEi2Eejppd2zLpYbqp3": 40
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 20,
+        "minimumPayment": 70,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 6665,
+            "user": "recaprpc",
+            "password": "9tJpmPPhmFGf2sqcg5WMWdUm5vrkYvuk4okkG8KcVqpT"
+        }
+    },
+
+    "ports": {
+        "4008": {
+            "diff": 0.0002
+        },
+        "4032": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "4256": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 6665,
+            "user": "recaprpc",
+            "password": "9tJpmPPhmFGf2sqcg5WMWdUm5vrkYvuk4okkG8KcVqpT"
+        }
+    ],
+
+    "p2p": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 6666,
+        "disableTransactions": false
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "ltc",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    },
+
+    "mongoMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "user": "",
+        "pass": "",
+        "database": "ltc",
+        "authMechanism": "DEFAULT"
+    }
+
+}

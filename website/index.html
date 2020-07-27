@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/png" href="/static/favicon.png"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.4.2/pure-min.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+    <script src="/static/highcharts.js"></script>
+
+    <!-- script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.5/d3.min.js"></script>
+    <script src="/static/nvd3.js"></script>
+    <link rel="stylesheet" href="/static/nvd3.css" -->
+
+    <script src="/static/main.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>Recap Pool</title>
+
+</head>
+
+<body>
+
+<header style="background-color: #003893;" >
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal">
+
+        <a class="pure-menu-heading hot-swapper" href="/"><img src="/static/logo.png" class="image" height="35px"></a>
+
+        <ul>
+            <li class="{{? it.selected === 'getting_started' }}pure-menu-selected{{?}}">
+                <a class="hot-swapper" href="/getting_started">
+                    <i class="fa fa-rocket"></i>&nbsp;
+                    Getting Started
+                </a>
+            </li>
+            <li class="{{? it.selected === 'tbs' }}pure-menu-selected{{?}}">
+                <a class="hot-swapper" href="/tbs">
+                    <i class="fa fa-table"></i>&nbsp;
+                    Pool Stats
+                </a>
+            </li>
+            <li class="{{? it.selected === 'workers' }}pure-menu-selected{{?}}">
+                <a class="hot-swapper" href="/workers">
+                    <i class="fa fa-cogs"></i>&nbsp;
+                    Workers Stats
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    {{=it.page}}
+</main>
+
+
+<footer>
+
+    <div style="color:#003893">
+        <a href="https://www.reviewcapital.org" target="_blank" class="navbar-link">Copyright © RECAP </a>
+    </div>
+
+</footer>
+
+</body>
+</html>
